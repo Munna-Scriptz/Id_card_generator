@@ -78,6 +78,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 550px;
 }
 /* ---------Master Card */
 .container{
@@ -96,15 +97,18 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 22px;
 }
 header .logo{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.logo h4{
-  color: white;
-  padding-left:7px;
+.logo h4 {
+    color: white;
+    padding-left: 7px;
+    font-size: 20px;
+    margin: 0;
 }
 .logo img{
   width: 48px;
@@ -113,9 +117,11 @@ header img{
   width: 60px;
 }
 /* THE CARD NUMBER AND DETAILS */
-.cardnum p,h3{
-  color: #fff;
-  padding-top: 5px;
+.cardnum p, h3 {
+    color: #fff;
+    padding-top: 5px;
+    margin: 10px 0;
+    font-size: 20px;
 }
 .val{
   padding-top: 15px;
@@ -124,8 +130,8 @@ header img{
   align-items: center;
   color: white;
 }
-.val span p{
-  font-size: 18px;
+.val p{
+  font-size: 20px;
 }
 
 .flip-card-inner {
@@ -133,6 +139,7 @@ header img{
   transition: transform 0.8s;
   transform-style: preserve-3d;
   height: 215px;
+  width: 380px;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -147,9 +154,15 @@ header img{
 }
 
 .flip-card-back {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
-  background-color: #171717;
-  transform: rotateY(180deg);
-  height: 215px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: #171717;
+    transform: rotateY(180deg);
+    height: 265px;
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    border-radius: 30px;
+    top: 0;
 }
 /* ----------Main End----------== */
