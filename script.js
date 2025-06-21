@@ -11,23 +11,23 @@ let BirthInput = document.querySelector('.BirthInput')
 let GenerateButton = document.querySelector('.SubmitButton')
 
 // ----------Construction Function
-GenerateButton.addEventListener('click', () =>{
+GenerateButton.addEventListener('click', () => {
 
-    function User (UserFullName , UserEmail , UserPhone , UserGender ,UserDate ){
-    
+    function User(UserFullName, UserEmail, UserPhone, UserGender, UserDate) {
+
         this.FullName = UserFullName
         this.UserEmail = UserEmail
         this.UserPhone = UserPhone
         this.UserGender = UserGender
         this.UserDate = UserDate
     }
-    
-    let singleUser = new User(`${NameInput.value}` , `${EmailInput.value}` , `${PhoneInput.value}` , `${GenderInput.value}` , `${BirthInput.value}`)
+
+    let singleUser = new User(`${NameInput.value}`, `${EmailInput.value}`, `${PhoneInput.value}`, `${GenderInput.value}`, `${BirthInput.value}`)
     MyData.push(singleUser)
 
     MainDiv.innerHTML = ''
-    
-    MyData.map(UserInfo =>{
+
+    MyData.map(UserInfo => {
 
         console.log(UserInfo)
 

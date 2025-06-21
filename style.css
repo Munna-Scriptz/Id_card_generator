@@ -1,76 +1,85 @@
 @import url('https://fonts.cdnfonts.com/css/google-sans');
+
 /* -----------------Common Css--------------- */
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Product Sans', sans-serif;
-    overflow: hidden;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Product Sans', sans-serif;
+  overflow: hidden;
 }
 
 
 /* ----------------Side Bar Start-------------- */
 .sidenav {
-    background-color: #3C3C3C;
-    color: aliceblue;
-    height: 100%;
-    left: 0;
-    overflow-x: hidden;
-    padding: 20px;
-    position: absolute;
-    top: 0;
-    width: 35%;
-    border-right: 2px solid;
+  background-color: #3C3C3C;
+  color: aliceblue;
+  height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  width: 35%;
+  border-right: 2px solid;
 }
-.sidenav h1{
-    text-align: center;
-    margin: 0;
-    position: relative;
-    margin-bottom: 40px;
+
+.sidenav h1 {
+  text-align: center;
+  margin: 0;
+  position: relative;
+  margin-bottom: 40px;
 }
+
 .sidenav h1::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 25%;
-    width: 50%;
-    height: 3px;
-    background-color: rgb(235, 27, 27);
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 25%;
+  width: 50%;
+  height: 3px;
+  background-color: rgb(235, 27, 27);
 }
-.all_inputs{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px 0;
+
+.all_inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
 }
-.all_inputs p{
-    font-size: 19px;
+
+.all_inputs p {
+  font-size: 19px;
 }
-.all_inputs input{
-    border: none;
-    outline: none;
-    width: 270px;
-    height: 48px;
-    border-radius: 20px;
-    padding: 0px 20px;
-    font-size: 14px;
+
+.all_inputs input {
+  border: none;
+  outline: none;
+  width: 270px;
+  height: 48px;
+  border-radius: 20px;
+  padding: 0px 20px;
+  font-size: 14px;
 }
-.all_inputs select{
-    border: none;
-    outline: none;
-    width: 310px;
-    height: 48px;
-    border-radius: 20px;
-    padding: 0px 20px;
-    font-size: 14px;
+
+.all_inputs select {
+  border: none;
+  outline: none;
+  width: 310px;
+  height: 48px;
+  border-radius: 20px;
+  padding: 0px 20px;
+  font-size: 14px;
 }
+
 /* ------Button Hover */
-.card_button{
+.card_button {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 40px;
 }
+
 button {
   position: relative;
   padding: 12px 35px;
@@ -226,24 +235,24 @@ button:hover .star-6 {
 /* ----------Main Start----------== */
 
 .main {
-    margin-top: 2%;
-    margin-left: 37%;
-    font-size: 28px;
-    padding: 0 10px;
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    height: 550px;
-    overflow-y: scroll;
+  margin-top: 2%;
+  margin-left: 37%;
+  font-size: 28px;
+  padding: 0 10px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 550px;
+  overflow-y: scroll;
 }
 
 /* ---------Master Card */
-.container{
+.container {
   position: relative;
-  background-image:url(images/bg.png);
+  background-image: url(images/bg.png);
   background-size: cover;
   max-width: 380px;
   min-width: 200px;
@@ -253,44 +262,53 @@ button:hover .star-6 {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   height: 215px;
 }
-header{
+
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 22px;
 }
-header .logo{
+
+header .logo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .logo h4 {
-    color: white;
-    padding-left: 7px;
-    font-size: 20px;
-    margin: 0;
+  color: white;
+  padding-left: 7px;
+  font-size: 20px;
+  margin: 0;
 }
-.logo img{
+
+.logo img {
   width: 48px;
 }
-header img{
+
+header img {
   width: 60px;
 }
+
 /* THE CARD NUMBER AND DETAILS */
-.cardnum p, h3 {
-    color: #fff;
-    padding-top: 5px;
-    margin: 10px 0;
-    font-size: 20px;
+.cardnum p,
+h3 {
+  color: #fff;
+  padding-top: 5px;
+  margin: 10px 0;
+  font-size: 20px;
 }
-.val{
+
+.val {
   padding-top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
 }
-.val p{
+
+.val p {
   font-size: 20px;
 }
 
@@ -306,48 +324,51 @@ header img{
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
-  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+.flip-card-front,
+.flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   height: 215px;
 }
 
 .flip-card-back {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
-    background-color: #171717;
-    transform: rotateY(180deg);
-    height: 265px;
-    background: transparent;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    border-radius: 30px;
-    top: 0;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  background-color: #171717;
+  transform: rotateY(180deg);
+  height: 265px;
+  background: transparent;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  border-radius: 30px;
+  top: 0;
 }
+
 .strip {
   position: absolute;
   background-color: black;
   width: 100%;
   height: 1.5em;
   top: 25px;
-  background: repeating-linear-gradient(
-    45deg,
-    #303030,
-    #303030 10px,
-    #202020 10px,
-    #202020 20px
-  );
+  background: repeating-linear-gradient(45deg,
+      #303030,
+      #303030 10px,
+      #202020 10px,
+      #202020 20px);
 }
-.flip-card-back .infos{
+
+.flip-card-back .infos {
   margin-top: 70px;
   padding: 0px 20px;
   display: flex;
   flex-direction: column;
 }
-.flip-card-back .infos p{
+
+.flip-card-back .infos p {
   color: ghostwhite;
   font-size: 15px;
   font-weight: 500;
 }
+
 /* ----------Main End----------== */
