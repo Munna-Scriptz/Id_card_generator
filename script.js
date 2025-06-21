@@ -28,7 +28,7 @@ GenerateButton.addEventListener('click', () =>{
     MainDiv.innerHTML = ''
     
     MyData.map(UserInfo =>{
-        
+
         console.log(UserInfo)
 
         MainDiv.innerHTML += `<div class="flip-card">
@@ -56,10 +56,10 @@ GenerateButton.addEventListener('click', () =>{
                     <div class="flip-card-back">
                         <div class="strip"></div>
                         <div class="infos">
-                            <p>Email : <span class="emailInfo">Example@gmail.com</span></p>
-                            <p>Phone : <span class="phoneInfo">0453455</span></p>
-                            <p>Gender : <span class="genderInfo">Male / Female</span></p>
-                            <p>Birth Date : <span class="dateInfo">2014</span></p>
+                            <p>Email : <span class="emailInfo">${UserInfo.UserEmail}</span></p>
+                            <p>Phone : <span class="phoneInfo">${UserInfo.UserPhone}</span></p>
+                            <p>Gender : <span class="genderInfo">${UserInfo.UserGender}</span></p>
+                            <p>Birth Date : <span class="dateInfo">${UserInfo.UserDate}</span></p>
                         </div>
                     </div>
     
